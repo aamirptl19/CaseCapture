@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    /* Deep navy — professional, trustworthy */
+    --primary: 221 65% 20%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 214 18% 93%;
+    --secondary-foreground: 220 25% 18%;
+
+    --muted: 214 18% 94%;
+    --muted-foreground: 215 14% 48%;
+
+    --accent: 214 18% 91%;
+    --accent-foreground: 220 25% 12%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 221 65% 20%;
+    --radius: 0.5rem;
+
+    --font-display: 'Lora', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-sans    { font-family: var(--font-sans); }
+}
