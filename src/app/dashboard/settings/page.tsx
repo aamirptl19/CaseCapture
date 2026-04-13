@@ -17,12 +17,18 @@ export default async function SettingsPage() {
     .eq("id", user.id)
     .single();
 
-  const firm = profile?.firms as {
-    name: string;
-    slug: string;
-    contact_email: string | null;
-    plan: string;
-  } | null;
+  type FirmRecord = {
+  name?: string | null;
+  slug?: string | null;
+  contact_email?: string | null;
+  plan?: string | null;
+};
+
+const firmData = profile?.firms as FirmRecord | FirmRecord[] | null | undefined;
+
+const firm = Array.isArray(firmData)
+  ? firmData[0] ?? null
+  : firmData ?? null;
 
   const { data: colleagues } = await supabase
     .from("users")
