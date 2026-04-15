@@ -41,13 +41,18 @@ export default function LoginPage() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/20 via-transparent to-transparent pointer-events-none" />
 
       <div className="w-full max-w-md relative">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary mb-4 shadow-lg">
+        {/* Above-form content */}
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary mb-5 shadow-lg">
             <FileText className="w-6 h-6 text-white" />
           </div>
-          <h1 className="font-display text-3xl text-slate-900 mb-1">CaseCapture</h1>
-          <p className="text-sm text-slate-500">Legal intake & triage platform</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">CaseCapture</p>
+          <h1 className="font-display text-3xl text-slate-900 leading-snug mb-3">
+            Turn more enquiries into<br />paying clients
+          </h1>
+          <p className="text-sm text-slate-500 leading-relaxed max-w-sm mx-auto">
+            Stop losing good enquiries. Capture, assess and convert them properly — with structured intake and intelligent summaries that help your team respond faster and focus on the right matters.
+          </p>
         </div>
 
         {/* Card */}
@@ -130,6 +135,16 @@ export default function LoginPage() {
             </button>
           </form>
         </div>
+
+        {/* Below-form bullets */}
+        <ul className="flex flex-col items-center gap-2 mt-8">
+          {["Structured client intake", "Instant case summaries", "Better lead prioritisation"].map((item) => (
+            <li key={item} className="text-xs text-slate-400 flex items-center gap-2">
+              <span className="w-1 h-1 rounded-full bg-slate-300 shrink-0" />
+              {item}
+            </li>
+          ))}
+        </ul>
 
         <p className="text-center text-xs text-slate-400 mt-6">
           CaseCapture is a secure platform for authorised law firm staff only.
