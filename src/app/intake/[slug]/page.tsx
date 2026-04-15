@@ -63,8 +63,11 @@ export default async function IntakePage({ params }: Props) {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 mt-16 py-6 text-center">
-        <p className="text-xs text-slate-400">
-          Powered by <span className="font-medium">CaseCapture</span> · Your information is stored securely and treated in strict confidence.
+        <p className="text-xs text-slate-400 max-w-xl mx-auto leading-relaxed">
+          By submitting this form, you agree that your information will be securely shared with {firm.name} for the purpose of assessing your enquiry. CaseCapture acts as a technology provider processing this information on the firm’s behalf.
+        </p>
+        <p className="text-xs text-slate-400 mt-2">
+          Powered by <span className="font-medium">CaseCapture</span>
         </p>
       </footer>
     </div>
