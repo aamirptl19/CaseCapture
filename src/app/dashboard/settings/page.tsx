@@ -45,7 +45,7 @@ const firm = Array.isArray(firmData)
       <div className="mb-8">
         <h1 className="font-display text-3xl text-slate-900">Settings</h1>
         <p className="text-slate-500 mt-1 text-sm">
-          Manage your firm&apos;s CaseCapture configuration.
+          Manage your firm&apos;s Lexaro configuration.
         </p>
       </div>
 

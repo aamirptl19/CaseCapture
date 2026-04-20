@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "CaseCapture — Legal Intake & Triage",
-    template: "%s | CaseCapture",
+    default: "Lexaro — Legal Intake & Triage",
+    template: "%s | Lexaro",
   },
   description:
     "AI-powered legal intake and triage for UK law firms. Capture better enquiries, triage faster.",

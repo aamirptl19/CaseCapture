@@ -46,7 +46,7 @@ export default function LoginPage() {
           <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary mb-5 shadow-lg">
             <FileText className="w-6 h-6 text-white" />
           </div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">CaseCapture</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Lexaro</p>
           <h1 className="font-display text-3xl text-slate-900 leading-snug mb-3">
             Turn more enquiries into<br />paying clients
           </h1>
@@ -147,7 +147,7 @@ export default function LoginPage() {
         </ul>
 
         <p className="text-center text-xs text-slate-400 mt-6">
-          CaseCapture is a secure platform for authorised law firm staff only.
+          Lexaro is a secure platform for authorised law firm staff only.
         </p>
       </div>
     </div>

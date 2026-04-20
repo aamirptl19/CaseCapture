@@ -64,10 +64,13 @@ export default async function IntakePage({ params }: Props) {
       {/* Footer */}
       <footer className="border-t border-slate-200 mt-16 py-6 text-center">
         <p className="text-xs text-slate-400 max-w-xl mx-auto leading-relaxed">
-          By submitting this form, you agree that your information will be securely shared with {firm.name} for the purpose of assessing your enquiry. CaseCapture acts as a technology provider processing this information on the firm’s behalf.
+          By submitting this form, you agree that your information will be securely shared with {firm.name} for the purpose of assessing your enquiry. Lexaro acts as a technology provider processing this information on the firm’s behalf.
         </p>
         <p className="text-xs text-slate-400 mt-2">
-          Powered by <span className="font-medium">CaseCapture</span>
+          Powered by <span className="font-medium">Lexaro</span> ·{" "}
+          <a href="/privacy" className="hover:text-slate-600 underline underline-offset-2 transition-colors">
+            Privacy Policy
+          </a>
         </p>
       </footer>
     </div>

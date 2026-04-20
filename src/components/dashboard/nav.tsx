@@ -46,7 +46,7 @@ export function DashboardNav({ firmName, userFullName }: NavProps) {
             <FileText className="w-4 h-4 text-white" />
           </div>
           <div className="min-w-0">
-            <p className="text-xs font-semibold text-white/50 uppercase tracking-widest">CaseCapture</p>
+            <p className="text-xs font-semibold text-white/50 uppercase tracking-widest">Lexaro</p>
             <p className="text-sm font-medium text-white truncate">{firmName}</p>
           </div>
         </div>
