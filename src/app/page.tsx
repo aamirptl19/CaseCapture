@@ -84,12 +84,14 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-auto flex flex-col gap-2.5">
-              <span
-                className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-slate-200 text-slate-400 text-sm font-medium cursor-not-allowed select-none"
-                aria-disabled="true"
+              <a
+                href="https://flex.lexaro.co.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-[hsl(221,65%,17%)] text-white text-sm font-medium hover:bg-[hsl(221,65%,13%)] transition-colors"
               >
-                Coming soon
-              </span>
+                Explore Lexaro Flex
+              </a>
               <a
                 href="https://flex.lexaro.co.uk/apply"
                 target="_blank"
