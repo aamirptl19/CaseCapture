@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Lexaro",
   },
   description:
-    "AI-powered legal intake and triage for UK law firms. Capture better enquiries, triage faster.",
+    "Lexaro helps law firms improve how they capture, manage and resource legal work.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
